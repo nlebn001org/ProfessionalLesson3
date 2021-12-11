@@ -1,0 +1,19 @@
+﻿<Window x:Class="ProfessionalLesson3Task4.MainWindow"
+        
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProfessionalLesson3Task4" xmlns:wpfx="http://schemas.xceed.com/wpf/xaml/toolkit"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <Grid Background="White">
+        <wpfx:ColorPicker  Name="cpBackground" Height="30" DisplayColorAndName="True" Margin="10,259,588,145" AutomationProperties.HelpText="dwa" />
+        <wpfx:ColorPicker Name="cpForeground" Height="30" DisplayColorAndName="True" Margin="588,254,10,150" SelectedColorChanged="cpBackground_SelectedColorChanged" />
+        <Button Content="Button" HorizontalAlignment="Center" Margin="0,329,0,0" VerticalAlignment="Top" Height="27" Width="184" Name="button1" Click="button1_Click"/>
+        <Label Content="CHOOSE BACKGROUND AND FOREGROUND"  HorizontalAlignment="Center" Margin="0,51,0,0" VerticalAlignment="Top" Height="65" Width="340" Background="White" Name="label1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"></Label>
+        <Label Content="Background Color" HorizontalAlignment="Left" Height="37" Margin="10,217,0,0" VerticalAlignment="Top" Width="202"/>
+        <Label Content="Foreground Color" HorizontalAlignment="Left" Height="37" Margin="588,212,0,0" VerticalAlignment="Top" Width="202"/>
+    </Grid>
+</Window>
